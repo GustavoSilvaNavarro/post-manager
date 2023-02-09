@@ -1,0 +1,29 @@
+{
+  "cSpell.words": [
+    "chartjs",
+    "codepaths",
+    "DATABASENAME",
+    "datepicker",
+    "dockerized",
+    "duoarea",
+    "ener",
+    "fullscreen",
+    "hstore",
+    "linebreak",
+    "MBBL",
+    "MMCF",
+    "Parens",
+    "precache",
+    "precached",
+    "precaching",
+    "prestart",
+    "tailwindcss",
+    "tanstack",
+    "tsbuildinfo",
+    "TTFB"
+  ],
+  "eslint.workingDirectories": [
+    "./backend",
+    "./frontend"
+  ],
+}

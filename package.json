@@ -1,0 +1,32 @@
+{
+  "name": "post-manager-app",
+  "version": "1.0.0",
+  "description": "Post manager for the user",
+  "main": "index.js",
+  "repository": "no yet",
+  "author": "Gustavo Silva <gustavo.silva.nav@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "cd ./backend && yarn && cd ../frontend && yarn",
+    "frontend:format-check": "cd ./frontend && yarn run format:client",
+    "lint:frontend": "cd ./frontend && yarn run lint:client",
+    "start:frontend": "cd ./frontend && yarn run dev",
+    "backend:format-check": "cd ./backend && yarn run format-check:prettier",
+    "lint:backend": "cd ./backend && yarn run lint",
+    "start:backend-dev": "cd ./backend && yarn run start:dev",
+    "build:backend": "cd ./backend && yarn run build:webpack",
+    "clean:backend": "cd backend && yarn run clean",
+    "prepare:prod": "cd backend && yarn run start:production",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "^8.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
