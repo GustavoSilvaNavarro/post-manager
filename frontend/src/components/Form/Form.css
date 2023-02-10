@@ -1,0 +1,8 @@
+.descriptionInput {
+  resize: none;
+  height: 80px;
+}
+
+.descriptionInput::-webkit-scrollbar {
+  width: 0px;
+}

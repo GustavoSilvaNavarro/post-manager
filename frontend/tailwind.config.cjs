@@ -7,7 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {},
+      colors: {
+        'shine-green': '#65f003',
+      },
     },
   },
   plugins: [require('@tailwindcss/forms')],
