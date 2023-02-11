@@ -1,0 +1,39 @@
+thead, tbody, tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.tableContainer {
+  overflow-y: auto;
+}
+
+.tableContainer::-webkit-scrollbar {
+  display: none;
+  height: 8px;
+  width: 8px;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 4px;
+}
+
+.tableContainer::-webkit-scrollbar-thumb:hover {
+  background: #4b4b4b;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.tableContainer::-webkit-scrollbar-thumb:active {
+  background-color: #353b48;
+}
+
+.tableContainer::-webkit-scrollbar-track {
+background: transparent;
+border-radius: 4px;
+}
+
+.tableContainer::-webkit-scrollbar-track:active,
+.tableContainer::-webkit-scrollbar-track:hover {
+  background: #353b48;
+}

@@ -3,3 +3,7 @@ export interface IPost {
   name: string;
   description: string;
 }
+
+export interface IState {
+  posts: Array<IPost>;
+}

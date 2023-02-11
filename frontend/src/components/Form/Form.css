@@ -6,3 +6,21 @@
 .descriptionInput::-webkit-scrollbar {
   width: 0px;
 }
+
+@media (max-width: 950px) {
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .formContainer__input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .formContainer__input > textarea,
+  .formContainer__input > input {
+    min-width: 100% !important;
+  }
+}

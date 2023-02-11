@@ -1,0 +1,19 @@
+@media (max-width: 800px) {
+  .filterBarContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .searchButton {
+    margin-top: 5px;
+  }
+
+  .searchBar__input {
+    width: 100%;
+  }
+
+  .filterBarContainer:first-child {
+    margin-bottom: 5px;
+  }
+}
