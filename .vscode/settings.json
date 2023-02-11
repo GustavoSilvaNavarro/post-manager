@@ -17,6 +17,7 @@
     "precached",
     "precaching",
     "prestart",
+    "Reactjs",
     "reduxjs",
     "tailwindcss",
     "tanstack",
@@ -28,4 +29,9 @@
     "./backend",
     "./frontend"
   ],
+  "files.exclude": {
+    "node_modules": true,
+    "backend/node_modules": true,
+    "frontend/node_modules": true
+  }
 }
