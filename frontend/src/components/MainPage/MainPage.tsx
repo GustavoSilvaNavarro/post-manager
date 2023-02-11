@@ -6,6 +6,7 @@ import '@/components/MainPage/MainPage.css';
 import { RootState } from '@/redux/store';
 import { retrieveListOfPosts, deleteSinglePost } from '@/services/post-services';
 import { listsOfPost, deletePost } from '@/redux/features/posts/post-slice';
+import { errorToast } from '@/helpers/toasts';
 
 export const MainPage = (): JSX.Element => {
   const postList = useSelector((state: RootState) => state.posts.posts);
@@ -24,7 +25,10 @@ export const MainPage = (): JSX.Element => {
 
     if (deletedPost) {
       dispatch(deletePost(deletedPost.id));
+      return;
     }
+
+    errorToast('Post was not deleted');
   };
 
   if (!postList || postList.length < 1) {

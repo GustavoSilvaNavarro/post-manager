@@ -40,6 +40,7 @@ export const NavBar = (): JSX.Element => {
       <button
         className="bg-shine-green border-[1px] border-shine-green min-w-[150px] rounded-md py-2 text-[white] hover:bg-transparent hover:border-[1px] hover:border-[#bec2c8] transition-colors searchButton"
         type="button"
+        disabled={filter === ''}
         onClick={handleFilter}
       >
         Search

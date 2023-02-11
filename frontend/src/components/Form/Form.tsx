@@ -5,6 +5,7 @@ import '@/components/Form/Form.css';
 
 import { createNewPost } from '@/services/post-services';
 import { addPost } from '@/redux/features/posts/post-slice';
+import { errorToast } from '@/helpers/toasts';
 
 export const Form = (): JSX.Element => {
   const [state, setState] = useState({
@@ -23,7 +24,11 @@ export const Form = (): JSX.Element => {
     e.preventDefault();
 
     if (state.namePost === '' || state.postDescription === '') {
-      //TODO: Send a toast
+      errorToast('Fields can not be empty');
+      setState({
+        namePost: '',
+        postDescription: '',
+      });
       return;
     }
 
@@ -39,7 +44,10 @@ export const Form = (): JSX.Element => {
       });
 
       dispatch(addPost(newPost));
+      return;
     }
+
+    errorToast('Post was not created');
   };
 
   return (

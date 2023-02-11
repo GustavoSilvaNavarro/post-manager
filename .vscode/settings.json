@@ -20,6 +20,7 @@
     "reduxjs",
     "tailwindcss",
     "tanstack",
+    "toastify",
     "tsbuildinfo",
     "TTFB"
   ],
