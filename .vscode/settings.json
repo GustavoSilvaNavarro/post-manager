@@ -1,37 +1,29 @@
 {
   "cSpell.words": [
-    "chartjs",
     "codepaths",
+    "daos",
     "DATABASENAME",
-    "datepicker",
-    "dockerized",
-    "duoarea",
-    "ener",
-    "fullscreen",
     "hstore",
-    "linebreak",
-    "MBBL",
-    "MMCF",
-    "Parens",
-    "precache",
-    "precached",
-    "precaching",
     "prestart",
-    "Reactjs",
     "reduxjs",
     "tailwindcss",
-    "tanstack",
     "toastify",
-    "tsbuildinfo",
-    "TTFB"
+    "tsbuildinfo"
   ],
   "eslint.workingDirectories": [
     "./backend",
     "./frontend"
   ],
   "files.exclude": {
-    "node_modules": true,
-    "backend/node_modules": true,
-    "frontend/node_modules": true
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
   }
 }

@@ -1,6 +1,5 @@
 # Custom folders
 /pgdata
-.husky/
 
 # Dependency directories
 /node_modules
